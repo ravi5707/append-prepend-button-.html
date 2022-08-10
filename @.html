@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(192, 141, 78);
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        </style>
+ </head>
+ 
+ <body>
+    <h1>j query append prepend method</h1>
+    <div class="box">
+        <h2>Test box</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quibusdam accusamus maxime quam ipsam nulla eius iste esse aspernatur, quaerat libero necessitatibus quisquam officia voluptates voluptatum, veniam ipsa modi explicabo?
+    </div>
+    <br>
+    <button class="appendbtn">append</button>
+    <button class="prependbtn">prepend</button>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script>
+    $ (document).ready(function(){
+        $ (".appendbtn").click(function(){
+            $('.box').append("<h2>yahoo baba</h2>");
+ 
+        });
+        
+        $ (".prependbtn").click(function(){
+            $('.box').prepend("<h2>yahoo baba</h2>");
+ 
+        });
+
+    });
+ </script>
+ </html>
